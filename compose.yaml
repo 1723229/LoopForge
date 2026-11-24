@@ -19,6 +19,7 @@ services:
       retries: 60
   platform:
     profiles: [platform]
+    hostname: loopforge-platform
     # Published release stack: never builds. Bump the pinned tag (here and in
     # AGENTFLOW_ISOLATED_IMAGE) with each release; source builds use compose.dev.yaml.
     image: ${LOOPFORGE_IMAGE:-ghcr.io/tencent/loopforge:0.4.2}
